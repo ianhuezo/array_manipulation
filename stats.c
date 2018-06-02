@@ -43,4 +43,34 @@ void main() {
 
 }
 
+void print_statistics()
+{
+
+}
+
+unsigned char find_median(unsigned char * arr, unsigned int length)
+{
+
+}
+
+unsigned char find_mean(unsigned char * arr, unsigned int length)
+{
+
+}
+
+unsigned char find_maximum(unsigned char * arr, unsigned int length)
+{
+
+}
+
+unsigned char find_minimum(unsigned char * arr, unsigned int length)
+{
+
+}
+
+unsigned char* sort_array(unsigned char * arr, unsigned int length)
+{
+
+}
+
 /* Add other Implementation File Code Here */

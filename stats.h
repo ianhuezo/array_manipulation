@@ -9,32 +9,92 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.h
+ * @brief Processes an array to find specific values
  *
- * <Add Extended Description Here>
+ * Processes the array to find mean, median, max, and min values
+ *by sorting an array
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Ian Huezo
+ * @date 6/2/2018
  *
  */
 #ifndef __STATS_H__
 #define __STATS_H__
 
 /* Add Your Declarations and Function Comments here */ 
-
+void print_statistics();
 /**
- * @brief <Add Brief Description of Function Here>
+ * @brief prints the wanted values from the array
  *
- * <Add Extended Description Here>
+ * Will print mean, median, max, and min using a variety of function calls
  *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
  *
- * @return <Add Return Informaiton here>
+ * @return print statement
  */
+
+unsigned char find_median(unsigned char * arr, unsigned int length);
+/**
+ * @brief Find the median of the array
+ *
+ * The median will be found, if the median is odd, average the middle two
+ *
+ * @param arr the array with the valuese
+ * @param length The specific length of the array
+ *
+ * @return will return the median as an unsigned char
+ */
+
+unsigned char find_mean(unsigned char * arr, unsigned int length);
+/**
+ * @brief Find the mean
+ *
+ * Add all values and divide by the length of the array
+ *
+ * @param arr the array with the values
+ * @param length the length of the array
+ *
+ * @return return the mean as an unsigned char
+ */
+
+unsigned char find_maximum(unsigned char * arr, unsigned int length);
+/**
+ * @brief finds the maximum
+ *
+ * the maximum will sort the array with the sort_array function
+ *and return the first element of the array
+ *
+ * @param arr the array with the values
+ * @param length the length of the array
+ *
+ * @return return the maximum as an unsigned char
+ */
+
+unsigned char find_minimum(unsigned char * arr, unsigned int length);
+/**
+ * @brief finds the minimum value
+ *
+ * finds the minimum value by using the sort_array function
+ *
+ * @param arr the array with the values
+ * @param length the length of the array
+ *
+ * @return return the mean as an unsigned char
+ */
+
+unsigned char* sort_array(unsigned char* arr, unsigned int length);
+/**
+ * @brief sorts the array from largest[0] to smallest[MAX]
+ *
+ * Using an algorithm for sorting will create a sorted array that starts
+ *from max to min values
+ *
+ * @param arr the array with the values
+ * @param length the length of the array
+ *
+ * @return the sorted array as an unsigned char
+ */
+
 
 
 #endif /* __STATS_H__ */

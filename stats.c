@@ -9,13 +9,13 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.c
+ * @brief A simple array manipulation program
  *
- * <Add Extended Description Here>
+ * Returns array processesing like mean.
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Ian Huezo
+ * @date 6/3/18
  *
  */
 

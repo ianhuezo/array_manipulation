@@ -23,12 +23,13 @@
 #define __STATS_H__
 
 /* Add Your Declarations and Function Comments here */ 
-void print_statistics();
+void print_statistics(unsigned char * arr, unsigned int length);
 /**
  * @brief prints the wanted values from the array
  *
  * Will print mean, median, max, and min using a variety of function calls
- *
+ * @param arr the array with the valuese
+ * @param length The specific length of the array
  *
  * @return print statement
  */
